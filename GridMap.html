@@ -1,0 +1,39 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Canvas Hexagonal Map</title>
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">-->
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+    <link href="css/GridMap.css" rel="stylesheet">
+</head>
+<body onmousemove="window.status = 'X=' + window.event.clientX || e.event.clientX + ' Y=' + window.event.clientY || e.event.clientY">
+
+    <!--    <button id="btnGenerateSquareGrid" onclick="drawSquareGrid()">Square</button>
+    <button id="btnGenerateDiamondGrid" onclick="drawDiamondGrid()">Diamond</button>
+    <button id="btnGenerateHexGrid" onclick="drawHexGrid1()">Hex</button>-->
+    <!--<div id="divGrid" style="z-index: 5; top: 40px; position: absolute;"></div>-->
+    
+    <svg id="svgGrid" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"></svg>
+    <canvas id="MAPCANVAS"></canvas>
+    <canvas id="LOWCANVAS"></canvas>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/Character.js"></script>
+    <script type="text/javascript" src="js/Grid.js"></script>
+    <script type="text/javascript" src="js/GridItem.js"></script>
+    <script type="text/javascript" src="js/SVGRenderer.js"></script>
+    <script type="text/javascript" src="js/CanvasRenderer.js"></script>
+    <script type="text/javascript" src="js/RenderHelper.js"></script>
+    <script type="text/javascript" src="js/UI.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
